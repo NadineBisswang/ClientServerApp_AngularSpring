@@ -1,0 +1,30 @@
+<div class="header">
+    <h1>DO<br>YOUR<br>THINGS</h1>
+    <div class="black-area">
+
+    </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <div class="input-group-prepend">
+                <input type="text" #todo class="form-control" placeholder="Was hast du zu erledigen?" [value]="searchValue" name="todo" ngModel>
+                <span class="input-group-text" (click)="addTodo(todo.value)"><i class="material-icons">add</i></span>
+            </div>
+
+            <div class="data">
+                <ul class="list-instyled">
+                    <li *ngFor="let todo of todoItems">
+                        <!-- .title greift auf Objekt zu; Blur-Event: Wenn Element den Fokus verliert, z.B. Klick daneben-->
+                        <input [value]="todo.title" (blur)="updateItem(todo, $event)">
+                        <i (click)="deleteItem(todo)" class="material-icons">delete</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<router-outlet></router-outlet>

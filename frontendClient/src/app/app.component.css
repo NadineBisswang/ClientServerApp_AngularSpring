@@ -1,0 +1,126 @@
+/*Google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*Google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.header {
+    background-image: url('src/assets/img/mountain_snow3.jpg');
+    background-size: cover;
+    border-bottom: solid 8px black;
+    height: 50vh;
+}
+
+.black-area {
+    background-color: black;
+    width: 60vh;
+    height: 50vh;
+    opacity: 45%;
+}
+
+.header h1 {
+    position: absolute;
+    padding: 1em 0.6em;
+    font-size: 3.2rem;
+    color: white;
+    font-weight: 200;
+    z-index: 1;
+    height: 50vh;
+    /*background-color: rgba(0, 0, 0, 0.2);
+    height: 80%;*/
+}
+
+.title-box {
+    color: black;
+    opacity: 50%;
+    position: absolute;
+}
+
+.img-header {
+    width: 100%;
+    border-bottom: 6px solid black;
+}
+
+form {
+    max-width: 30em;
+    margin: 2em auto;
+    position: relative;
+    /*background: #f4f4f4;*/
+    padding: 2em 3em;
+}
+
+li input {
+    width: 310px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+form h1 {
+    font-family: "Raleway";
+    color: rgb(0, 25, 249);
+}
+
+form input[type=text]::placeholder {
+    font-family: "Raleway";
+    color: #666;
+}
+
+form .data {
+    margin-top: 1em;
+}
+
+form .data li {
+    background: #fff;
+    border-left: 4px solid rgb( 46, 186, 238);
+    padding: 1em;
+    margin: 0.8em auto;
+    color: #666;
+    font-family: "Raleway";
+}
+
+form .data li i {
+    float: right;
+    color: #888;
+    cursor: pointer;
+}
+
+form .input-group-text {
+    background: #2EBAEE;
+    /*border-radius: 50%; <- Für einen runden Icon*/
+    width: 3em;
+    height: 3em;
+    margin: -2.25em 2.1em;
+    padding: 1em 7px;
+    color: #fff;
+    position: absolute;
+    right: 13px;
+    top: 68px;
+    cursor: pointer;
+}
+
+form .input-group-text i {
+    font-size: 2em;
+}
+
+form .form-control {
+    height: 3em;
+    font-family: "Raleway";
+}
+
+form .form-control:focus {
+    box-shadow: 0;
+}
+
+.data input {
+    border: none;
+}
